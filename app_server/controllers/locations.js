@@ -51,7 +51,7 @@ module.exports.locationInfo=function(req,res){
 			address: '125 High Street, Reading, RG6 1PS',
 			rating: 3,
 			facilities: ['Hot drinks', 'Food','Premium wifi'],
-			coords: {lat: 43.4708763, lng: -80.53947370000003},
+			coords: {lng: -80.520410, lat: 43.464258},
 			openingTimes: [{
 				days: 'Monday-Friday',
 				opening: '7:00am',

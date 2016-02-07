@@ -1,8 +1,9 @@
 var mongoose = require('mongoose');
 var gracefulShutdown;
-var dbURI = 'mongodb://localhost/loc8r';
+var dbURI = 'mongodb://localhost/Loc8r';
+
 if (process.env.NODE_ENV === 'production') {
-    dbURI = process.env.MONGOLAB_URI;
+     dbURI = process.env.MANGOLAB_URI;
 }
 mongoose.connect(dbURI);
 
@@ -14,7 +15,7 @@ mongoose.connection.on('error', function(err) {
     console.log('Mongoose connection error: ' + err);
 });
 mongoose.connection.on('disconnected', function() {
-    console.log('Mongoose disconnected');
+    console.log('Mongoose disconnected ');
 });
 
 // CAPTURE APP TERMINATION / RESTART EVENTS
