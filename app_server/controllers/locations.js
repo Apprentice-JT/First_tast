@@ -3,7 +3,7 @@ var apiOptions ={
 	server: "http://localhost:3000"
 };
 if (process.env.NODE_ENV === 'production'){
-	apiOptions.server = "http://aqueous-falls-53717.herokuapp.com";
+	apiOptions.server = "https://aqueous-falls-53717.herokuapp.com";
 };
 
 /* GET 'home' page */
