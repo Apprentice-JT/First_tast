@@ -105,6 +105,7 @@ var doAddReview=function(req,res,location){
 		});
 		location.save(function(err, location){
 			if (err){
+				console.log(err);
 				sendJSONresponse(res, 400, err);
 			}
 			else{
